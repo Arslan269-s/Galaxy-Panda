@@ -16,7 +16,7 @@ export const Header = () => {
 											<img alt="" src={logoImg}	
 												style={{width: "90px", height: "90px", display:"inline-block", marginRight: "-5px", position: "relative", top: "2px", marginRight: "4px", marginBottom: "5px"}} />
 											<span className="pixel-font"
-												style={{color: "#FFF",fontSize: "36px",display: "inline-block",verticalAlign: "middle",letterSpacing: "1px"}}>galaxy
+												style={{color: "#FFF",fontSize: "36px",display: "inline-block",verticalAlign: "middle",letterSpacing: "1px",fontFamily: "bangers", color: "#00FFAB",}}>galaxy
 												panda</span>
 										</a>
 									</div>
@@ -28,6 +28,15 @@ export const Header = () => {
 								<ul id="mainmenu">
 									<li>
 										<a href="index.html">Home<span></span></a>
+									</li>
+									<li>
+										<a href="roadmap.html">Roadmap<span></span></a>
+									</li>
+									<li>
+										<a href="rankings.html">Rarity Ranking<span></span></a>
+									</li>
+									<li>
+										<a href="attributes.html">Attributes<span></span></a>
 									</li>
 									<li>
 										<a href="index.html#section-stats">Mint Stats<span></span></a>

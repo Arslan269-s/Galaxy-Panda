@@ -1,5 +1,6 @@
 import React from 'react';
-import change from "../images/changing-soul-sol.gif";
+import change from "../images/panda_rider gif.gif";
+
 
 export const Collect = () => {
     return (
@@ -20,9 +21,9 @@ export const Collect = () => {
                         </div>
                         <div className="nft_coll_info" style={{paddingTop: "20px",}}>
                             <a href="#">
-                                <h4>Totally Unique</h4>
+                                <h4>Panda Rider</h4>
                             </a>
-                            <span>10k Ever Mints</span>
+                            <span>NFT Game</span>
                         </div>
                     </div>
                 </div>

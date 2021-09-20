@@ -1,7 +1,10 @@
 import React from 'react';
-import social from "../images/social_discord.png";
-import socialTeligram from "../images/social_telegram.png";
-import socialTwittwer from "../images/social_twitter.png";
+import social from "../images/discord.png";
+import socialTeligram from "../images/teligaram.png";
+import socialTwittwer from "../images/twitter .png";
+import instagram from "../images/instagaram.png";
+import facebook from "../images/facebook.png";
+import youtube from "../images/youtube.png";
 
 export const Arriving = () => {
     return (
@@ -26,8 +29,8 @@ export const Arriving = () => {
 									<h4 className="" style={{color: "#fff",}}> are arriving</h4>
 									<p className="" style={{color: "#929BD0",}}>Get in on the ground floor by
 										collecting the exclusive Galaxy panda NFTs. See our roadmap for our future
-										plans,
-										including our DAPP interactive GALAXY PANDA FUSION feature.</p>
+										plans.
+										</p>
 								</div>
 							</div>
 						</div>
@@ -49,6 +52,18 @@ export const Arriving = () => {
 										<a href="https://twitter.com/GalaxyPandasNFT" target="_blank"
 											style={{display: "inline-block", verticalAlign: "top",}}>
 											<img src={socialTwittwer} alt="" style={{width: "64px",}} />
+										</a>
+										<a href="https://twitter.com/GalaxyPandasNFT" target="_blank"
+											style={{display: "inline-block", verticalAlign: "top",}}>
+											<img src={instagram} alt="" style={{width: "64px",}} />
+										</a>
+										<a href="https://twitter.com/GalaxyPandasNFT" target="_blank"
+											style={{display: "inline-block", verticalAlign: "top",}}>
+											<img src={facebook} alt="" style={{width: "64px",}} />
+										</a>
+										<a href="https://twitter.com/GalaxyPandasNFT" target="_blank"
+											style={{display: "inline-block", verticalAlign: "top",}}>
+											<img src={youtube} alt="" style={{width: "64px",}} />
 										</a>
 									</div>
 								</div>

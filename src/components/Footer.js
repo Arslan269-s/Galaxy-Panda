@@ -1,7 +1,7 @@
 import React from 'react';
-import footerImg1 from "../images/social_discord.png";
-import footerImg2 from "../images/social_telegram.png";
-import footerImg3 from "../images/social_twitter.png";
+import footerImg1 from "../images/discord.png";
+import footerImg2 from "../images/teligaram.png";
+import footerImg3 from "../images/twitter .png";
 import footerImg4 from "../images/social-instagram.jfif";
 import footerImg5 from "../images/social_facebook.png";
 import footerImg6 from "../images/social_tiktok.png";

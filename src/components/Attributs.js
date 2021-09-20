@@ -1,5 +1,5 @@
 import React from 'react';
-import attrImg from "../images/Fire_sword_img.png";
+import attrImg from "../images/tikio.jpg";
 
 export const Attributs = () => {
     return (
@@ -15,7 +15,7 @@ export const Attributs = () => {
 								eco-system! Here's a sneak peak of the behinds the scenes process.</p>
 						</div>
 						<div class="col-md-5">
-							<iframe title="vimeo-player" src="https://player.vimeo.com/video/597823043?h=e34c93a88e"
+							<iframe title="vimeo-player" src="https://www.youtube.com/embed/Lx3zdurREbY"
 								style={{width: "100%", height:"270", frameborder:"0", }}></iframe>
 						</div>
 						<div class="col-md-3">

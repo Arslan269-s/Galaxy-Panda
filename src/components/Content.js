@@ -17,12 +17,12 @@ export const Content = () => {
 							<div className="col-md-8">
 								<img src={bg}/>
 								<div className="spacer-single"></div>
-								<h6 className="limited"><span
+								<h6 className="limited"><span style={{fontSize: "24px", letterSpacing: "2px", color: "#ffda59",}}
 										
 										>Limited: 10,001
 										Unique NFTs on Solana</span></h6>
 								<div className=""></div>
-								<h1 className="introducing">Introducing <span className="pixel-font"
+								<h1 className="introducing">Introducing <span className="pixel-font" style={{color: "#00FFAB",fontFamily: "bangers",}}
 										>galaxy
 										panda.</span></h1>
 								<p style={{color: "#fcd95a",}} className="generated-p">

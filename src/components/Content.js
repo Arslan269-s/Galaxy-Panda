@@ -1,8 +1,9 @@
-import React from 'react';
+import React,{useState} from 'react';
 import ContentImg from "../images/galaxy_panda.png";
 import bg from "../images/transparent_background_synth_stars.png";
 
 export const Content = () => {
+	const [counter,setCounter] = useState(1);
     return (
         <section id="section-hero" aria-label="section" className=""
 				style={{background: "rgb(165,70,121)",background: "linear-gradient(200deg, rgba(165,70,121,1) 0%, rgba(117,64,171,1) 100%)", zIndex: "1",}}>
@@ -44,7 +45,7 @@ export const Content = () => {
 								</div>
 							</div>
 						</div>
-						<form>
+						<form onSubmit={(e)=>e.preventDefault()}>
 							<div className="container" style={{width: "40% !importent",}}>
 								<div className="content" style={{backgroundColor: "#1F273E",}}>
 									<h1 className="text-center pt-5 pb-3"> Mint Galaxy Panda</h1>
@@ -52,14 +53,14 @@ export const Content = () => {
 										<div className="row">	
 											<div className="col-lg-6 col-md-6 col-sm-12">
 												<div className="button-add">
-													<span id="span-1"><button className="minus">-</button>
-														<h2>1</h2><button className="plus">+</button>
+													<span id="span-1"><button className="minus" onClick={()=>setCounter(counter-1)}>-</button>
+														<h2>{counter}</h2><button className="plus" onClick={()=>setCounter(counter+1)}>+</button>
 													</span>
 												</div>
 											</div>
 											<div className="col-lg-6 col-md-6 col-sm-12">
 												<div className="btn-galaxy">
-													<button>Mint</button>
+													<button onClick={()=>alert("Minted")}>Mint</button>
 												</div>
 											</div>
 										</div>

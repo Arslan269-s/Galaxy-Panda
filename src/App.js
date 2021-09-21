@@ -9,6 +9,9 @@ import {Collect} from './components/Collect';
 import {Attributs} from './components/Attributs';
 import {SectionFaq} from './components/SectionFaq';
 import {Footer} from './components/Footer';
+import Carousel from 'react-bootstrap/Carousel';
+// import "~slick-carousel/slick/slick.css"; 
+// import "~slick-carousel/slick/slick-theme.css";  
 
 function App() {
   return (

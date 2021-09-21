@@ -5,7 +5,7 @@ import bg from "../images/transparent_background_synth_stars.png";
 export const Content = () => {
     return (
         <section id="section-hero" aria-label="section" className=""
-				style={{background: "rgb(165,70,121)",background: "linear-gradient(200deg, rgba(165,70,121,1) 0%, rgba(117,64,171,1) 100%)",}}>
+				style={{background: "rgb(165,70,121)",background: "linear-gradient(200deg, rgba(165,70,121,1) 0%, rgba(117,64,171,1) 100%)", zIndex: "1",}}>
 				<div className="v-center">
 					<div className="container">
 						<div className="row align-items-center">

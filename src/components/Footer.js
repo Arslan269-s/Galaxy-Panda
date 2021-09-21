@@ -38,7 +38,7 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className="col-md-3 col-sm-6 col-xs-1">
-                    <div className="widget">
+                    <div className="widget mb-2 pb-0">
                         <h5 style={{color: "#00FFAB",}}>Community</h5>
                         <a href="https://discord.gg/KUr9vvdQKy" target="_blank"
                             style={{display: "inline-block", verticalAlign: "top",}}>
@@ -53,7 +53,7 @@ export const Footer = () => {
                             <img src={footerImg3} alt="" style={{width: "64px", }}/>
                         </a>
                     </div>
-                    <div className="widget-2 mb-0 pb-0">
+                    <div className="widget-2 mb-2 pb-0">
                         <a href="https://discord.gg/KUr9vvdQKy" target="_blank"
                             style={{display: "inline-block", verticalAlign: "top",}}>
                             <img src={footerImg4} alt=""
@@ -76,8 +76,8 @@ export const Footer = () => {
 
                 </div>
                 <div className="col-md-3 col-sm-6 col-xs-12">
-                    <iframe src="https://discord.com/widget?id=881018472962879548&amp;theme=dark" height="300"
-                        allowtransparency="true" frameborder="0"
+                    <iframe src="https://discord.com/widget?id=836637190259081216&amp;theme=dark" height="300"
+                        allowtransparency="true" frameBorder="0"
                         sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
                         style={{width: "100%",}}></iframe>
                 </div>

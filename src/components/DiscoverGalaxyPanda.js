@@ -102,6 +102,10 @@ export const DiscoverGalaxyPanda = () => {
 		// 			</div>
 		// 		</div>
 		// 	</section>
+
+
+
+		
         <>
         </>
     );

@@ -42,6 +42,11 @@ html {
   background: #fff;
 }
 
+img {
+  height: auto;
+  width: 100%;
+}
+
 body {
   font-family: var(--body-font);
   font-size: 16px;
@@ -759,6 +764,7 @@ header .header-col.mid .social-icons {
   color: #fff;
   text-align: center;
   outline: none;
+  border: 0 !important;
 }
 
 #mainmenu a span {
@@ -846,13 +852,22 @@ header .header-col.mid .social-icons {
 }
 
 #mainmenu li ul {
-  width: 180px;
+  /* width: 180px;
+  height: auto;
+  position: absolute;
+  left: 0px;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0; */
+  width: 130px;
   height: auto;
   position: absolute;
   left: 0px;
   z-index: 10;
   visibility: hidden;
   opacity: 0;
+  top: 53px;
+  margin-left: 31px;
 }
 
 #mainmenu li li {
@@ -14504,7 +14519,7 @@ img {
   }
 
   #mainmenu li ul li a {
-    display: block;
+    display: none !important;
   }
 
   #mainmenu li ul li:last-child {
@@ -15171,6 +15186,21 @@ img {
   .timeline-pic {
     height: 300px;
   }
+
+  form .container {
+    width: 100% !important;
+    margin: 170px auto 38px;
+  }
+
+  .content .container {
+    width: 100% !important;
+    margin: 0px auto;
+  }
+
+  .btn-galaxy button {
+    position: relative;
+    top: -31px;
+  }
 }
 
 /* -------------------------------------------------- 
@@ -15214,6 +15244,23 @@ img {
     column-count: 1;
     column-gap: 20px;
   }
+
+  form .container {
+    width: 100% !important;
+    margin: 170px auto 38px;
+  }
+
+  .content .container {
+    width: 100% !important;
+    margin: 0px auto;
+  }
+
+  .btn-galaxy button {
+    position: relative;
+    top: 12px;
+    margin-left: 40px;
+    float: left !important;
+  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -15250,6 +15297,15 @@ img {
     -o-background-size: auto 100%;
     background-size: auto 100%;
     background-attachment: scroll;
+  }
+  form .container {
+    width: 100% !important;
+    margin: 170px auto 38px;
+  }
+
+  .content .container {
+    width: 100% !important;
+    margin: 0px auto;
   }
 }
 
@@ -15381,4 +15437,29 @@ header {
   .header-col-mid .btn-main {
     margin-top: -10px !important;
   }
+
+  form .container {
+    width: 100% !important;
+    margin: 170px auto 38px;
+  }
+
+  .content .container {
+    width: 100% !important;
+    margin: 0px auto;
+  }
+}
+li.dropdown {
+  position: relative;
+}
+ul.dropdown-menu {
+  position: absolute;
+  min-width: 85px;
+}
+ul.dropdown-menu li {
+  display: block !important;
+  white-space: nowrap;
+}
+
+.dropdown-menu {
+  display: block !important;
 }

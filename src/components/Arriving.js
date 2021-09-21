@@ -43,27 +43,27 @@ export const Arriving = () => {
 									<div className="">
 										<a href="https://discord.gg/KUr9vvdQKy" target="_blank"
 											style={{display: "inline-block", verticalAlign: "top",}}>
-											<img src={social} alt="" style={{width: "64px",}} />
+											<img src={social} alt="" style={{width: "64px",marginLeft: "3px", paddingBottom: "5px",}} />
 										</a>
 										<a href="https://t.me/SolanaSouls" target="_blank"
 											style={{display: "inline-block", verticalAlign: "top",}}>
-											<img src={socialTeligram} alt=""style={{width: "64px",}} />
+											<img src={socialTeligram} alt=""style={{width: "64px",marginLeft: "3px", paddingBottom: "5px",}} />
 										</a>
 										<a href="https://twitter.com/GalaxyPandasNFT" target="_blank"
 											style={{display: "inline-block", verticalAlign: "top",}}>
-											<img src={socialTwittwer} alt="" style={{width: "64px",}} />
+											<img src={socialTwittwer} alt="" style={{width: "64px",marginLeft: "3px", paddingBottom: "5px",}} />
 										</a>
 										<a href="https://twitter.com/GalaxyPandasNFT" target="_blank"
 											style={{display: "inline-block", verticalAlign: "top",}}>
-											<img src={instagram} alt="" style={{width: "64px",}} />
+											<img src={instagram} alt="" style={{width: "64px", marginLeft: "3px", paddingBottom: "5px",}} />
 										</a>
 										<a href="https://twitter.com/GalaxyPandasNFT" target="_blank"
 											style={{display: "inline-block", verticalAlign: "top",}}>
-											<img src={facebook} alt="" style={{width: "64px",}} />
+											<img src={facebook} alt="" style={{width: "64px",marginLeft: "3px", paddingBottom: "5px",}} />
 										</a>
 										<a href="https://twitter.com/GalaxyPandasNFT" target="_blank"
 											style={{display: "inline-block", verticalAlign: "top",}}>
-											<img src={youtube} alt="" style={{width: "64px",}} />
+											<img src={youtube} alt="" style={{width: "64px",marginLeft: "3px", paddingBottom: "5px",}} />
 										</a>
 									</div>
 								</div>

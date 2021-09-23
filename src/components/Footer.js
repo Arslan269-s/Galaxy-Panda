@@ -91,7 +91,7 @@ export const Footer = () => {
                             <div className="de-flex-col">
                                 <a href="index.html">
                                     <img alt="" className="f-logo" src={galaxyFooter}
-                                        style={{height: "48px", marginRight: "15px", }}/><span className="copy">&copy; Galaxy
+                                        style={{height: "48px", marginRight: "15px", width: "48px", }}/><span className="copy">&copy; Galaxy
                                         Panda</span>
                                 </a>
                                 <a href="https://solana.com/"

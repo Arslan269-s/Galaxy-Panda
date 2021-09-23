@@ -6,17 +6,19 @@ export const Content = () => {
 	const [counter,setCounter] = useState(1);
     return (
         <section id="section-hero" aria-label="section" className=""
-				style={{background: "rgb(165,70,121)",background: "linear-gradient(200deg, rgba(165,70,121,1) 0%, rgba(117,64,171,1) 100%)", zIndex: "1",}}>
+				style={{background: "linear-gradient(200deg, rgba(165,70,121,1) 0%, rgba(117,64,171,1) 100%)", zIndex: "1",}}>
 				<div className="v-center">
 					<div className="container">
 						<div className="row align-items-center">
 							<div className="col-md-4">
 							
-								<img src={ContentImg}  />
+								<img src={ContentImg}  alt="img"/>
 									
 							</div>
 							<div className="col-md-8">
-								<img src={bg}/>
+								<div className="bg-content-img" style={{width: "80px", height: "20px",}}>
+								<img src={bg} alt="img"/>
+								</div>
 								<div className="spacer-single"></div>
 								<h6 className="limited"><span style={{fontSize: "24px", letterSpacing: "2px", color: "#ffda59",}}
 										
@@ -65,7 +67,7 @@ export const Content = () => {
 											</div>
 										</div>
 										<div className="mint">
-											<p> 0.05 SOL per Mint</p>
+											<p> $? SOL per Mint</p>
 										</div>
 										<div className="counter">
 											<div className="counter-icon"><i className="fa fa-compass" aria-hidden="true"></i>

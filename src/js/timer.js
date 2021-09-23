@@ -24,13 +24,26 @@ setInterval('updateTimer()', 1000);
 
 
 
+$(function () {
+    alert('here');
+    $('body').on('mouseenter', 'ul li', function(){
+        console.log('here')
+        $(this).find('ul').first().stop().toggle(200);
+    }, function(){
+        $(this).find('ul').stop().hide(200);
+
+    })
+    // $('ul li').hover(function () {
+    //     $(this).find('ul').first().stop().toggle(200);
+    // }, function () {
+    //     $(this).find('ul').stop().hide(200);
+    // });
+
+
+});
+
 // $(function () {
-
-//     $('li').hover(function () {
-//         $(this).find('ul').first().stop().toggle(200);
-//     }, function () {
-//         $(this).find('ul').stop().hide(200);
+//     $('#icon').mouseEnter(function(){
+//         $('ul').toggleClass('show');
 //     });
-
-
 // });

@@ -1,11 +1,11 @@
 import React from 'react';
-import image1 from '../images/16.png';
-import image2 from '../images/765.png';
-import image3 from '../images/113.png';
-import image4 from '../images/269.png';
-import image5 from '../images/540.png';
-import image6 from '../images/22.png';
-import image7 from '../images/352.png';
+// import image1 from '../images/16.png';
+// import image2 from '../images/765.png';
+// import image3 from '../images/113.png';
+// import image4 from '../images/269.png';
+// import image5 from '../images/540.png';
+// import image6 from '../images/22.png';
+// import image7 from '../images/352.png';
 
 
 

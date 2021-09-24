@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+// import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 import {Header} from './components/Header';
 import {Content} from './components/Content';
 import {MintGalaxyPanda} from './components/MintGalaxyPanda';

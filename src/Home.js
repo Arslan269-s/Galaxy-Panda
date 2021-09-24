@@ -27,8 +27,6 @@ const ConnectButton = styled(WalletDialogButton)``;
 
 const CounterText = styled.span``; // add your styles here
 
-
-
 const MintButton = styled(Button)``; // add your styles here
 
 const Home = (props) => {
@@ -150,7 +148,6 @@ const Home = (props) => {
   }, [wallet, props.candyMachineId, props.connection]);
 
   return (
-  
     <>
       <header className="transparent">
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -181,7 +178,6 @@ const Home = (props) => {
                       verticalAlign: "middle",
                       letterSpacing: "1px",
                       fontFamily: "bangers",
-                  
                     }}
                   >
                     galaxy panda
@@ -300,42 +296,50 @@ const Home = (props) => {
                   <h1 className="text-center pt-5 pb-3"> Mint Galaxy Panda</h1>
                   <div className="container">
                     <div className="row">
-                     
-                      <div className="col-lg-6 col-md-6 col-sm-12">
-                        <div className="btn-galaxy">
-                          
-                            {!wallet ? (
-                              <ConnectButton>Connect Wallet</ConnectButton>
+
+                      
+                      <div className="col-lg-6 col-md-6 col-sm-12" style={{marginLeft:"70px"}}>
+                        {!wallet ? (
+                          <ConnectButton>Connect Wallet</ConnectButton>
+                        ) : (
+                          <MintButton
+                            disabled={isSoldOut || isMinting || !isActive}
+                            onClick={onMint}
+                            variant="contained"
+                          >
+                            {isSoldOut ? (
+                              "SOLD OUT"
+                            ) : isActive ? (
+                              isMinting ? (
+                                <CircularProgress />
+                              ) : (
+                                "MINT"
+                              )
                             ) : (
-                              <MintButton
-                                disabled={isSoldOut || isMinting || !isActive}
-                                onClick={onMint}
-                                variant="contained"
-                              >
-                                {isSoldOut ? (
-                                  "SOLD OUT"
-                                ) : isActive ? (
-                                  isMinting ? (
-                                    <CircularProgress />
-                                  ) : (
-                                    "MINT"
-                                  )
-                                ) : (
-                                  <Countdown
-                                    date={startDate}
-                                    onMount={({ completed }) =>
-                                      completed && setIsActive(true)
-                                    }
-                                    onComplete={() => setIsActive(true)}
-                                    renderer={renderCounter}
-                                  />
-                                )}
-                              </MintButton>
+                              <Countdown
+                                date={startDate}
+                                onMount={({ completed }) =>
+                                  completed && setIsActive(true)
+                                }
+                                onComplete={() => setIsActive(true)}
+                                renderer={renderCounter}
+                              />
                             )}
-                          
-                        </div>
+                          </MintButton>
+                        )}
                       </div>
-                    <h5 className="col-12">Item sold: {itemsRedeemed}/{itemsAvailable}</h5>
+
+                      {wallet && (
+                        <h5
+                          style={{
+                            textAlign: "center",
+                            color: "white",
+                            marginTop: "10px",
+                          }}
+                        >
+                          Item sold: {itemsRedeemed}/{itemsAvailable}
+                        </h5>
+                      )}
                     </div>
                     <div className="mint">
                       <p> 0.01 SOL per Mint</p>

@@ -1,4 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import "popper.js/dist/umd/popper.min.js";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useMemo } from "react";
 import "./App.css";
 import Home from "./Home";

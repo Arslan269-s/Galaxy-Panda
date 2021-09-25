@@ -8,7 +8,6 @@ import Countdown from "react-countdown";
 import { Button, CircularProgress, Snackbar } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 
-// import * as anchor from "@project-serum/anchor";
 
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 
@@ -16,7 +15,6 @@ import { useAnchorWallet } from "@solana/wallet-adapter-react";
 import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
 
 import {
-  // CandyMachine,
   awaitTransactionSignatureConfirmation,
   getCandyMachineState,
   mintOneToken,
@@ -34,7 +32,6 @@ const Home = (props) => {
   const [isActive, setIsActive] = useState(false); // true when countdown completes
   const [isSoldOut, setIsSoldOut] = useState(false); // true when items remaining is zero
   const [isMinting, setIsMinting] = useState(false); // true when user got to press MINT
-  const [counter, setCounter] = useState(1);
   const [alertState, setAlertState] = useState({
     open: false,
     message: "",
@@ -191,18 +188,20 @@ const Home = (props) => {
                 <Nav.Link href="index.html">Home</Nav.Link>
                 <Nav.Link href="roadmap.html">Roadmap</Nav.Link>
                 <NavDropdown title="NFT" id="collasible-nav-dropdown">
-                  <NavDropdown.Item href="rankings.html">
+
+
+                  <NavDropdown.Item href="index.html#mint-galaxy-panda">
                     Rarity Ranking
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="attributes.html">
+                  <NavDropdown.Item href="index.html#section-video">
                     Attributes
                   </NavDropdown.Item>
                   <NavDropdown.Item href="index.html#section-stats">
                     Mint State
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="token.html">token</Nav.Link>
-                <Nav.Link href="game.html">Game</Nav.Link>
+                <Nav.Link href="index.html#section-intro">token</Nav.Link>
+                <Nav.Link href="index.html#section-stats">Game</Nav.Link>
                 <Nav.Link href="index.html#section-faq">FAQ</Nav.Link>
                 {wallet && (
                   <button>
@@ -271,7 +270,7 @@ const Home = (props) => {
                 </p>
                 <div className="spacer-10"></div>
                 <div id="mint-button">
-                  <a style={{ color: "#fff" }} href="" className="roadmap">
+                  <a style={{ color: "#fff" }} href="#" className="roadmap">
                     Sale Opening Soon
                   </a>
                   <p style={{ color: "#fcd95a" }}>
@@ -296,9 +295,10 @@ const Home = (props) => {
                   <h1 className="text-center pt-5 pb-3"> Mint Galaxy Panda</h1>
                   <div className="container">
                     <div className="row">
-
-                      
-                      <div className="col-lg-6 col-md-6 col-sm-12" style={{marginLeft:"70px"}}>
+                      <div
+                        className="col-lg-6 col-md-6 col-sm-12"
+                        style={{ marginLeft: "70px" }}
+                      >
                         {!wallet ? (
                           <ConnectButton>Connect Wallet</ConnectButton>
                         ) : (

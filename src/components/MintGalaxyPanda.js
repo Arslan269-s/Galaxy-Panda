@@ -4,7 +4,7 @@ import single from "../images/single-buy.png";
 
 export const MintGalaxyPanda = () => {
     return (
-        <section style={{backgroundColor: "#161D30",}}>
+        <section style={{backgroundColor: "#161D30",}} id="mint-galaxy-panda">
 				<div className="container">
 					<h2 className="" style={{textAlign: "center", display: "block", color: "#fff",}}>Mint a
 						Galaxy Panda</h2>

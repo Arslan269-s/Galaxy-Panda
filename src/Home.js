@@ -8,7 +8,6 @@ import Countdown from "react-countdown";
 import { Button, CircularProgress, Snackbar } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 
-
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 
 import { useAnchorWallet } from "@solana/wallet-adapter-react";
@@ -183,13 +182,11 @@ const Home = (props) => {
               </div>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav collasible-nav-dropdown">
+            <Navbar.Collapse collapseOnSelect expand="lg" variant="dark">
               <Nav className="ms-auto">
                 <Nav.Link href="index.html">Home</Nav.Link>
-                <Nav.Link href="roadmap.html">Roadmap</Nav.Link>
+                <Nav.Link href="index.html#section-stats">Roadmap</Nav.Link>
                 <NavDropdown title="NFT" id="collasible-nav-dropdown">
-
-
                   <NavDropdown.Item href="index.html#mint-galaxy-panda">
                     Rarity Ranking
                   </NavDropdown.Item>
@@ -309,21 +306,14 @@ const Home = (props) => {
                           >
                             {isSoldOut ? (
                               "SOLD OUT"
-                            ) : isActive ? (
+                            ) : Date.now() >= startDate ? (
                               isMinting ? (
                                 <CircularProgress />
                               ) : (
                                 "MINT"
                               )
                             ) : (
-                              <Countdown
-                                date={startDate}
-                                onMount={({ completed }) =>
-                                  completed && setIsActive(true)
-                                }
-                                onComplete={() => setIsActive(true)}
-                                renderer={renderCounter}
-                              />
+                              "Comming Soon"
                             )}
                           </MintButton>
                         )}
@@ -342,13 +332,22 @@ const Home = (props) => {
                       )}
                     </div>
                     <div className="mint">
-                      <p> 0.01 SOL per Mint</p>
+                      <p> 0.001 SOL per Mint</p>
                     </div>
                     <div className="counter">
-                      <div className="counter-icon">
-                        <i className="fa fa-compass" aria-hidden="true"></i>
-                        <h2 className="">Galax Drop Countdown</h2>
-                      </div>
+                      <h3>Galax Drop Countdown</h3>
+                      {Date.now() < startDate ? (
+                        <div style={{ color: "white" }}>
+                          <Countdown
+                            date={startDate}
+                            onMount={({ completed }) =>
+                              completed && setIsActive(true)
+                            }
+                            onComplete={() => setIsActive(true)}
+                            renderer={renderCounter}
+                          />
+                        </div>
+                      ) : null}
                     </div>
                     <div className="timer-counter">
                       <div id="timer"></div>
